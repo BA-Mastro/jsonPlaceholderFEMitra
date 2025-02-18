@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    background-color: #143817; /* Light background */
+    padding: 20px;
+    justify-content: center;
+}
+
+.container > div {
+    background: rgb(222, 241, 189);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.container > div:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
